@@ -1,0 +1,609 @@
+.about-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: 20px;
+  min-height: 440px;
+  padding: 50px clamp(25px, 6vw, 75px);
+  border-radius: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  background:
+    radial-gradient(ellipse at 75% 45%, #c8c8ff99, transparent 43%),
+    linear-gradient(120deg, #f0f1ff, #e9edff);
+}
+.about-prism {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+}
+.about-hero::before,
+.about-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #9da8e533;
+  border-radius: 50%;
+}
+.about-hero::before {
+  width: 450px;
+  height: 450px;
+  right: 25%;
+  top: -55%;
+}
+.about-hero::after {
+  width: 600px;
+  height: 600px;
+  right: 18%;
+  bottom: -110%;
+}
+.about-hero-content {
+  z-index: 2;
+}
+.about-hero h1 {
+  font-size: clamp(35px, 4.5vw, 53px);
+  line-height: 1.55;
+  letter-spacing: -2px;
+  margin: 15px 0;
+}
+.about-hero h1 em,
+.vision-content h2 em,
+.about-cta h2 em {
+  font-style: normal;
+  color: var(--primary);
+}
+.about-hero-content > p {
+  max-width: 450px;
+  font-size: 12px;
+  line-height: 2.4;
+  color: var(--muted);
+}
+.about-hero-content .primary-btn {
+  display: inline-block;
+  margin-top: 13px;
+}
+
+.hero-caption {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.hero-caption span {
+  color: var(--primary);
+  margin-left: 5px;
+}
+.about-hero-visual {
+  position: relative;
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+}
+.about-prism {
+  width: min(100%, 390px);
+  z-index: 2;
+  filter: drop-shadow(0 25px 22px #7167c52b);
+}
+.about-orbit {
+  position: absolute;
+  border: 1px solid #9a9fe755;
+  border-radius: 50%;
+}
+.orbit-a {
+  width: 390px;
+  height: 140px;
+  transform: rotate(-25deg);
+}
+.orbit-b {
+  width: 330px;
+  height: 230px;
+  transform: rotate(48deg);
+}
+.about-rainbow {
+  position: absolute;
+  width: 210px;
+  height: 130px;
+  right: 0;
+  top: 40%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 250deg at 10% 50%,
+    #ff6c8c77,
+    #ffcf6c77,
+    #70e6c977,
+    #67baff77,
+    #a78aff77,
+    transparent 65%
+  );
+  filter: blur(22px);
+  opacity: 0.65;
+}
+
+.about-formula {
+  position: absolute;
+  color: #7775b6;
+  font: 13px Georgia;
+  z-index: 3;
+}
+.formula-a {
+  top: 8%;
+  left: 5%;
+}
+.formula-b {
+  right: 0;
+  top: 20%;
+}
+.formula-c {
+  bottom: 8%;
+  left: 12%;
+}
+
+.about-spark {
+  position: absolute;
+  right: 13%;
+  bottom: 20%;
+  color: #8c83e8;
+  font-size: 27px;
+  z-index: 3;
+}
+
+.story-section {
+  padding-top: 75px;
+}
+.story-heading {
+  margin-bottom: 30px;
+}
+.story-heading small,
+.center-heading small,
+.vision-content > small,
+.about-cta > small {
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.story-heading h2 {
+  font-size: 25px;
+  margin: 8px 0 13px;
+}
+.heading-line {
+  display: block;
+  width: 55px;
+  height: 3px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #8b78ef, #5e4bcf);
+}
+.story-content {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 45px;
+  align-items: center;
+  padding: 35px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.story-symbol {
+  min-height: 220px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: radial-gradient(circle, #bcb5ff66, transparent 65%), var(--soft);
+}
+.story-symbol span {
+  font-size: 125px;
+  line-height: 1;
+  color: var(--primary);
+  filter: drop-shadow(0 12px 12px #7465d955);
+}
+.story-symbol small {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.story-text p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2.5;
+  margin: 0 0 15px;
+}
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-section {
+  margin-top: 75px;
+  padding: 65px 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #a99af51c, transparent 60%), var(--soft);
+}
+.center-heading {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto 35px;
+}
+.center-heading h2 {
+  font-size: 26px;
+  margin: 8px 0;
+}
+.center-heading p {
+  font-size: 11px;
+  line-height: 2.2;
+  color: var(--muted);
+}
+.belief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+.belief-card {
+  position: relative;
+  overflow: hidden;
+  padding: 27px 23px;
+  min-height: 225px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  transition: 0.25s;
+}
+.belief-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+.belief-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  font-size: 27px;
+}
+.purple-icon {
+  color: #7968dc;
+  background: #8c79ef19;
+}
+.blue-icon {
+  color: #45a9cb;
+  background: #5cc6e51b;
+}
+.green-icon {
+  color: #55b69a;
+  background: #55b69a1c;
+}
+.belief-card h3 {
+  font-size: 15px;
+  margin: 17px 0 8px;
+}
+.belief-card p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 2.2;
+}
+.belief-card > span {
+  position: absolute;
+  left: 17px;
+  bottom: 10px;
+  color: var(--line);
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.fields-section {
+  padding-top: 75px;
+}
+.fields-description {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2.4;
+  margin: 12px 0 25px;
+}
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+.field-card {
+  min-height: 105px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  transition: 0.25s;
+}
+.field-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.field-card > span {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-size: 26px;
+}
+.field-card h3 {
+  font-size: 13px;
+  margin: 0 0 5px;
+}
+.field-card p {
+  font-size: 10px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.9;
+}
+.field-purple > span {
+  color: #7968dc;
+  background: #8c79ef19;
+}
+.field-blue > span {
+  color: #45a9cb;
+  background: #5cc6e51b;
+}
+.field-green > span {
+  color: #55b69a;
+  background: #55b69a1c;
+}
+.field-pink > span {
+  color: #c77ab7;
+  background: #d58ac21c;
+}
+.field-orange > span {
+  color: #d49a52;
+  background: #eab45b22;
+}
+.field-cyan > span {
+  color: #559dbd;
+  background: #64c2d51c;
+}
+
+.vision-section {
+  margin-top: 75px;
+  padding: 40px 6%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 45px;
+  border-radius: 23px;
+  background: var(--soft);
+}
+.vision-art {
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.vision-circle {
+  position: absolute;
+  border: 1px solid #8d81df88;
+  border-radius: 50%;
+}
+.circle-one {
+  width: 180px;
+  height: 180px;
+  box-shadow:
+    0 0 0 20px #9a8ce812,
+    0 0 0 40px #9a8ce80d;
+}
+.circle-two {
+  width: 115px;
+  height: 230px;
+  transform: rotate(45deg);
+}
+.vision-art > span {
+  z-index: 2;
+  font-size: 90px;
+  color: var(--primary);
+  filter: drop-shadow(0 10px 12px #7465d955);
+}
+.vision-art > small {
+  z-index: 2;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+.vision-content h2 {
+  font-size: 26px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+.vision-content p {
+  font-size: 11px;
+  line-height: 2.4;
+  color: var(--muted);
+}
+
+.about-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: 75px;
+  margin-bottom: 70px;
+  padding: 55px 20px;
+  text-align: center;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, #a99af544, transparent 60%), var(--soft);
+}
+.about-cta h2 {
+  font-size: clamp(24px, 4vw, 34px);
+  margin: 13px 0;
+}
+.about-cta p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 2.2;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 23px;
+  border-radius: 25px;
+  color: white;
+  font-size: 11px;
+  background: linear-gradient(120deg, #8b78ef, #5e4bcf);
+  box-shadow: 0 7px 18px #6654d933;
+  transition: 0.25s;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px #6654d955;
+}
+.cta-decoration {
+  position: absolute;
+  z-index: -1;
+  left: 5%;
+  top: -40px;
+  font-size: 180px;
+  line-height: 1;
+  color: var(--primary);
+  opacity: 0.07;
+}
+
+body:has(.theme-toggle:checked) .about-hero {
+  background:
+    radial-gradient(ellipse at 75% 45%, #6654d944, transparent 43%),
+    linear-gradient(120deg, #101b37, #171b42);
+}
+body:has(.theme-toggle:checked) .about-formula {
+  color: #aaa2e5;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    padding: 40px;
+  }
+  .about-hero-visual {
+    min-height: 290px;
+  }
+  .about-prism {
+    width: 100%;
+  }
+  .story-content {
+    gap: 25px;
+  }
+  .belief-grid {
+    gap: 12px;
+  }
+  .vision-section {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 32px 20px 15px;
+  }
+  .about-hero h1 {
+    font-size: 37px;
+  }
+  .about-hero-content > p {
+    margin-inline: auto;
+  }
+  .about-hero-visual {
+    min-height: 260px;
+  }
+  .about-prism {
+    width: 80%;
+  }
+  .orbit-a {
+    width: 300px;
+  }
+  .orbit-b {
+    width: 270px;
+  }
+  .about-formula {
+    font-size: 11px;
+  }
+  .story-section,
+  .fields-section {
+    padding-top: 50px;
+  }
+  .story-heading h2 {
+    font-size: 21px;
+  }
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 20px;
+  }
+  .story-symbol {
+    min-height: 160px;
+  }
+  .story-symbol span {
+    font-size: 95px;
+  }
+  .philosophy-section {
+    margin-top: 50px;
+    padding: 45px 0;
+  }
+  .center-heading h2 {
+    font-size: 22px;
+  }
+  .belief-grid {
+    grid-template-columns: 1fr;
+  }
+  .belief-card {
+    min-height: 190px;
+  }
+  .fields-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+  .field-card {
+    min-height: 115px;
+    padding: 12px;
+    gap: 9px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .field-card > span {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+    font-size: 22px;
+  }
+  .field-card h3 {
+    font-size: 12px;
+  }
+  .field-card p {
+    font-size: 9px;
+  }
+  .vision-section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 22px;
+  }
+  .vision-art {
+    min-height: 180px;
+  }
+  .vision-content {
+    text-align: center;
+  }
+  .vision-content h2 {
+    font-size: 23px;
+  }
+  .about-cta {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    padding: 40px 18px;
+  }
+}

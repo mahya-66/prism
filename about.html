@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما | منشور</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="theme" class="theme-toggle" />
+    <div class="site">
+      <header class="header container">
+        <a href="index.html" class="brand">
+          <svg viewBox="0 0 64 64" class="logo">
+            <defs>
+              <linearGradient id="logo-gradient" x2="1" y2="1">
+                <stop stop-color="#b9f5ff" />
+                <stop offset="1" stop-color="#7660dc" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M32 4 5 55h54L32 4Z"
+              fill="none"
+              stroke="url(#logo-gradient)"
+              stroke-width="2.5"
+            />
+            <path d="M32 4 19 55h13V4Z" fill="#70cde8" opacity=".35" />
+            <path d="M32 4 45 55H32Z" fill="#a28bea" opacity=".5" />
+            <path d="M5 55 32 47 59 55M32 4v43" fill="none" stroke="#c7dfff" />
+          </svg>
+          <span>
+            <strong>منشور</strong>
+            <small>PRISM · دنیای علم و کشف</small>
+          </span>
+        </a>
+        <nav class="navbar">
+          <a href="index.html#home">خانه</a>
+          <a href="index.html#topics">دسته‌بندی‌ها</a>
+          <a href="index.html#projects">پروژه‌ها</a>
+          <a href="about.html" class="active">درباره ما</a>
+          <a href="index.html#contact">ارتباط با ما</a>
+        </nav>
+        <div class="header-actions">
+          <label for="theme" class="theme-switch">
+            <span>☼</span>
+            <i><b></b></i>
+            <span>☾</span>
+          </label>
+          <a href="index.html#projects" class="small-btn"> شروع کشف ← </a>
+        </div>
+      </header>
+      <main>
+        <section class="about-hero container">
+          <div class="about-hero-content">
+            <span class="eyebrow"> ✦ GET TO KNOW PRISM </span>
+            <h1>
+              هر کشف، از یک
+              <em>زاویه</em>
+              شروع می‌شود.
+            </h1>
+            <p>
+              ما در منشور به دنبال دیدن چیزهایی هستیم که شاید در نگاه اول ساده
+              به نظر برسند؛ اما پشت هرکدام، دنیایی از شگفتی و دانش پنهان شده
+              است.
+            </p>
+            <a href="#our-story" class="primary-btn"> داستان ما را بخوان ← </a>
+            <div class="hero-caption">
+              <span>✧</span>
+              کنجکاوی، آغاز تمام کشف‌هاست.
+            </div>
+          </div>
+          <div class="about-hero-visual">
+            <div class="about-orbit orbit-a"></div>
+            <div class="about-orbit orbit-b"></div>
+            <span class="about-formula formula-a">E = mc²</span>
+            <span class="about-formula formula-b">λ = c / f</span>
+            <span class="about-formula formula-c">φ = 1.618</span>
+            <div class="about-rainbow"></div>
+            <!-- <svg
+              viewBox="0 0 440 430"
+              class="about-prism"
+              role="img"
+              aria-label="منشور شیشه‌ای"
+            >
+              <defs>
+                <linearGradient id="about-glass" x2="1" y2="1">
+                  <stop stop-color="#efffff" stop-opacity=".85" />
+                  <stop offset=".5" stop-color="#a7baff" stop-opacity=".3" />
+                  <stop offset="1" stop-color="#7660d9" stop-opacity=".55" />
+                </linearGradient>
+              </defs>
+              <ellipse
+                cx="220"
+                cy="370"
+                rx="155"
+                ry="17"
+                fill="#8b85e8"
+                opacity=".16"
+              />
+              <path
+                d="M220 28 34 350 406 350Z"
+                fill="url(#about-glass)"
+                stroke="#c9f4ff"
+                stroke-width="2"
+              />
+              <path
+                d="M220 28 34 350 220 316Z"
+                fill="#78d9ed"
+                opacity=".25"
+                stroke="#d7f8ff"
+              />
+              <path
+                d="M220 28 406350 220 316Z"
+                fill="#b69aff"
+                opacity=".25"
+                stroke="#e3d7ff"
+              />
+              <path
+                d="M34 350 220 316 406 350 220 382Z"
+                fill="#9586e8"
+                opacity=".3"
+                stroke="#e2dcff"
+              />
+              <path
+                d="M220 28V316M220 316 34 350M220 316 406 350"
+                fill="none"
+                stroke="white"
+                stroke-width="1.8"
+              />
+            </svg> -->
+            <svg
+              class="about-prism"
+              viewBox="0 0 500 420"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="A glass prism splitting white light into a rainbow"
+            >
+              <defs>
+                <linearGradient id="prismGlass" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity=".85" />
+                  <stop offset="50%" stop-color="#c8c5ff" stop-opacity=".35" />
+                  <stop offset="100%" stop-color="#8e83e8" stop-opacity=".55" />
+                </linearGradient>
+
+                <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#ff8ca8" />
+                  <stop offset="25%" stop-color="#ffc58b" />
+                  <stop offset="50%" stop-color="#f6e58d" />
+                  <stop offset="75%" stop-color="#9adbc4" />
+                  <stop offset="100%" stop-color="#9b9bff" />
+                </linearGradient>
+
+                <linearGradient id="lightBeam">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity=".9" />
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+                </linearGradient>
+
+                <filter
+                  id="softGlow"
+                  x="-50%"
+                  y="-50%"
+                  width="200%"
+                  height="200%"
+                >
+                  <feGaussianBlur stdDeviation="9" />
+                </filter>
+              </defs>
+
+              <!-- Background glow -->
+              <circle
+                cx="260"
+                cy="205"
+                r="135"
+                fill="#a99fff"
+                opacity=".13"
+                filter="url(#softGlow)"
+              />
+
+              <!-- Incoming light -->
+              <path
+                d="M25 210 L175 210"
+                stroke="url(#lightBeam)"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M25 210 L175 210"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                opacity=".9"
+              />
+
+              <!-- Rainbow light -->
+              <path
+                d="M315 185 L465 105"
+                stroke="#ff9bb4"
+                stroke-width="3"
+                opacity=".8"
+              />
+
+              <path
+                d="M315 195 L475 155"
+                stroke="#ffc58b"
+                stroke-width="3"
+                opacity=".8"
+              />
+
+              <path
+                d="M315 210 L480 210"
+                stroke="#f3d77c"
+                stroke-width="3"
+                opacity=".8"
+              />
+
+              <path
+                d="M315 225 L475 265"
+                stroke="#8fdac4"
+                stroke-width="3"
+                opacity=".8"
+              />
+
+              <path
+                d="M315 235 L465 315"
+                stroke="#9a9cff"
+                stroke-width="3"
+                opacity=".8"
+              />
+
+              <!-- Prism shadow -->
+              <path
+                d="M245 75 L365 310 L125 310 Z"
+                fill="#6555c9"
+                opacity=".12"
+                transform="translate(8 12)"
+              />
+
+              <!-- Main prism -->
+              <path
+                d="M245 75 L365 310 L125 310 Z"
+                fill="url(#prismGlass)"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linejoin="round"
+              />
+
+              <!-- Inner glass reflection -->
+              <path
+                d="M245 75 L245 310 L125 310 Z"
+                fill="#ffffff"
+                opacity=".15"
+              />
+
+              <path
+                d="M245 75 L365 310 L245 310"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                opacity=".65"
+              />
+
+              <!-- Small sparkles -->
+              <g fill="#ffffff">
+                <path
+                  d="M105 115 L109 127 L121 131 L109 135 L105 147 L101 135 L89 131 L101 127 Z"
+                />
+                <path
+                  d="M390 75 L393 84 L402 87 L393 90 L390 99 L387 90 L378 87 L387 84 Z"
+                />
+                <circle cx="395" cy="340" r="4" />
+                <circle cx="95" cy="285" r="3" />
+              </g>
+
+              <!-- Decorative circles -->
+              <circle
+                cx="390"
+                cy="135"
+                r="7"
+                fill="none"
+                stroke="#c4baff"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="90"
+                cy="175"
+                r="6"
+                fill="none"
+                stroke="#c4baff"
+                stroke-width="1.5"
+              />
+            </svg>
+            <span class="about-spark">✧</span>
+          </div>
+        </section>
+        <section class="story-section container" id="our-story">
+          <div class="story-heading">
+            <small>OUR STORY</small>
+            <h2>داستان منشور از کجا شروع شد؟</h2>
+            <span class="heading-line"></span>
+          </div>
+          <div class="story-content">
+            <div class="story-symbol">
+              <span>△</span>
+              <small>PRISM · 01</small>
+            </div>
+            <div class="story-text">
+              <p>
+                گاهی برای دیدن دنیایی تازه، لازم نیست به جای دیگری برویم؛ کافی
+                است از زاویه‌ای متفاوت به همان دنیای همیشگی نگاه کنیم.
+              </p>
+              <p>
+                منشور با همین ایده شکل گرفته است؛ فضایی برای کشف ارتباط‌های
+                شگفت‌انگیز میان علم، طبیعت، هنر و زندگی روزمره. ما باور داریم
+                پشت هر پدیده‌ی ساده، پرسشی جذاب و پاسخی برای کشف کردن وجود دارد.
+              </p>
+              <p>
+                همان‌طور که یک منشور نور سفید را به رنگ‌های گوناگون تبدیل
+                می‌کند، ما هم تلاش می‌کنیم موضوعات مختلف را از دیدگاه‌های متفاوت
+                بررسی کنیم و جنبه‌های تازه‌ای از آن‌ها را نشان دهیم.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="philosophy-section">
+          <div class="container">
+            <div class="center-heading">
+              <small>OUR PHILOSOPHY</small>
+              <h2>باور ما در منشور</h2>
+              <p>
+                یادگیری فقط به دانستن پاسخ‌ها محدود نمی‌شود؛ گاهی ارزشمندترین
+                بخش مسیر، خودِ پرسیدن است.
+              </p>
+            </div>
+            <div class="belief-grid">
+              <article class="belief-card">
+                <div class="belief-icon purple-icon">✧</div>
+                <h3>کنجکاوی</h3>
+                <p>
+                  هر سؤال می‌تواند شروع یک مسیر تازه باشد. ما به قدرت پرسیدن و
+                  جست‌وجو کردن باور داریم.
+                </p>
+                <span>01</span>
+              </article>
+              <article class="belief-card">
+                <div class="belief-icon blue-icon">⌬</div>
+                <h3>کشف ارتباط‌ها</h3>
+                <p>
+                  علم بخش‌های جدا از هم نیست؛ دنیایی از ارتباط‌هاست که با شناخت
+                  آن‌ها تصویر کامل‌تری می‌سازیم.
+                </p>
+                <span>02</span>
+              </article>
+              <article class="belief-card">
+                <div class="belief-icon green-icon">∞</div>
+                <h3>یادگیری مداوم</h3>
+                <p>
+                  همیشه چیزی تازه برای آموختن وجود دارد. هر کشف، دریچه‌ای به سوی
+                  پرسش‌های جدید است.
+                </p>
+                <span>03</span>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="fields-section container">
+          <div class="section-heading">
+            <div>
+              <small>EXPLORE DIFFERENT WORLDS</small>
+              <h2>از دریچه‌های مختلف جهان را ببین</h2>
+            </div>
+          </div>
+          <p class="fields-description">
+            در منشور، علم را به یک موضوع محدود نمی‌کنیم. از کوچک‌ترین ذرات تا
+            گستره‌ی بی‌پایان کیهان، هر حوزه می‌تواند ما را با شگفتی تازه‌ای
+            روبه‌رو کند.
+          </p>
+          <div class="fields-grid">
+            <article class="field-card field-purple">
+              <span>⌬</span>
+              <div>
+                <h3>فیزیک</h3>
+                <p>از قوانین طبیعت تا انرژی و حرکت</p>
+              </div>
+            </article>
+            <article class="field-card field-blue">
+              <span>⚗</span>
+              <div>
+                <h3>شیمی</h3>
+                <p>از اتم‌ها تا واکنش‌های شگفت‌انگیز</p>
+              </div>
+            </article>
+            <article class="field-card field-green">
+              <span>❋</span>
+              <div>
+                <h3>زیست‌شناسی</h3>
+                <p>شناخت زندگی و رازهای طبیعت</p>
+              </div>
+            </article>
+            <article class="field-card field-pink">
+              <span>∞</span>
+              <div>
+                <h3>ریاضیات</h3>
+                <p>الگوها، منطق و زیبایی اعداد</p>
+              </div>
+            </article>
+            <article class="field-card field-orange">
+              <span>✧</span>
+              <div>
+                <h3>هنر و طراحی</h3>
+                <p>نقطه‌ی تلاقی خلاقیت و دانش</p>
+              </div>
+            </article>
+            <article class="field-card field-cyan">
+              <span>☼</span>
+              <div>
+                <h3>نجوم</h3>
+                <p>نگاهی به جهان فراتر از زمین</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="vision-section container">
+          <div class="vision-art">
+            <div class="vision-circle circle-one"></div>
+            <div class="vision-circle circle-two"></div>
+            <span>✦</span>
+            <small>LOOK BEYOND</small>
+          </div>
+          <div class="vision-content">
+            <small>OUR VISION</small>
+            <h2>
+              فراتر از حفظ کردن؛
+              <em>برای فهمیدن.</em>
+            </h2>
+            <p>
+              هدف ما این است که یادگیری را به تجربه‌ای جذاب‌تر و قابل‌لمس‌ تر
+              تبدیل کنیم؛ جایی که مفاهیم علمی فقط در کتاب‌ها باقی نمانند و
+              بتوانیم حضور آن‌ها را در اطراف خود ببینیم.
+            </p>
+            <p>
+              می‌خواهیم فضایی بسازیم که در آن پرسیدن، آزمودن و کشف کردن همیشه
+              ارزشمند باشد.
+            </p>
+          </div>
+        </section>
+        <section class="about-cta container">
+          <div class="cta-decoration">△</div>
+          <small>YOUR JOURNEY STARTS HERE</small>
+          <h2>
+            آماده‌ای جهان را
+            <em>متفاوت</em> ببینی؟
+          </h2>
+          <p>هر کشف بزرگ با یک سؤال کوچک آغاز می‌شود. سؤال بعدی تو چیست؟</p>
+          <a href="index.html#topics" class="cta-button"> کشف را شروع کن ← </a>
+        </section>
+      </main>
+      <footer class="footer container" id="contact">
+        <a href="index.html" class="brand">
+          <strong class="footer-logo">△</strong>
+          <span>
+            <b>منشور</b>
+            <small>PRISM · دنیای علم و کشف</small>
+          </span>
+        </a>
+        <p>جهان را از زاویه‌ای متفاوت ببین.</p>
+        <div class="footer-links">
+          <a href="index.html#home">خانه</a>
+          <a href="index.html#topics">دسته‌بندی‌ها</a>
+          <a href="index.html#projects">پروژه‌ها</a>
+          <a href="about.html">درباره ما</a>
+          <a href="index.html#contact">ارتباط با ما</a>
+        </div>
+        <small class="copyright"> © 2026 Prism. تمام حقوق محفوظ است. </small>
+      </footer>
+    </div>
+  </body>
+</html>

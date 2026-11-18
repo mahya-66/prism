@@ -1,4 +1,5 @@
 :root {
+  /* Main colors */
   --bg: #f5f7ff;
   --surface: #ffffff;
   --soft: #eef0ff;
@@ -7,6 +8,23 @@
   --line: #e1e5f2;
   --primary: #6654d9;
   --shadow: 0 12px 35px #2e366a16;
+
+  /* Prism colors */
+  --prism-glass: #c8c5ff;
+  --prism-shadow: #6555c9;
+  --prism-glow: #a99fff;
+  --prism-reflection: #ffffff;
+
+  /* Rainbow colors */
+  --rainbow-pink: #ff8ca8;
+  --rainbow-orange: #ffc58b;
+  --rainbow-yellow: #f6e58d;
+  --rainbow-green: #9adbc4;
+  --rainbow-purple: #9b9bff;
+
+  /* Decorative colors */
+  --prism-sparkle: #ffffff;
+  --prism-decoration: #c4baff;
 }
 * {
   box-sizing: border-box;
