@@ -58,7 +58,7 @@
 }
 .about-hero-content > p {
   max-width: 450px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2.4;
   color: var(--muted);
 }
@@ -70,7 +70,7 @@
 .hero-caption {
   margin-top: 28px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 .hero-caption span {
   color: var(--primary);
@@ -125,7 +125,7 @@
 .about-formula {
   position: absolute;
   color: var(--formula--color);
-  font: 13px Georgia;
+  font: 14px Georgia;
   z-index: 3;
 }
 .formula-a {
@@ -161,7 +161,7 @@
 .vision-content > small,
 .about-cta > small {
   color: var(--primary);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -234,7 +234,7 @@
   margin: 8px 0;
 }
 .center-heading p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 2.2;
   color: var(--muted);
 }
@@ -335,11 +335,11 @@
   font-size: 26px;
 }
 .field-card h3 {
-  font-size: 13px;
+  font-size: 16px;
   margin: 0 0 5px;
 }
 .field-card p {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   margin: 0;
   line-height: 1.9;
@@ -413,7 +413,7 @@
 }
 .vision-art > small {
   z-index: 2;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: var(--muted);
 }
@@ -423,14 +423,13 @@
   margin: 10px 0;
 }
 .vision-content p {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 2.4;
   color: var(--muted);
 }
 
 .about-cta {
   position: relative;
-  isolation: isolate;
   overflow: hidden;
   margin-top: 75px;
   margin-bottom: 70px;
@@ -530,7 +529,7 @@ body:has(.theme-toggle:checked) .about-formula {
     width: 270px;
   }
   .about-formula {
-    font-size: 11px;
+    font-size: 12px;
   }
   .story-section,
   .fields-section {
