@@ -183,6 +183,9 @@ h1 em {
   gap: 11px;
   margin-top: 22px;
 }
+.hero-buttons a {
+  font-size: 14px;
+}
 
 .primary-btn,
 .secondary-btn {
@@ -426,14 +429,14 @@ h1 em {
   font-size: 40px;
 }
 .feature small {
-  font-size: 11px;
+  font-size: 14px;
 }
 .feature h2 {
   font-size: 18px;
   margin: 5px 0;
 }
 .feature p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
   color: #ffffffdf;
   margin: 0;
@@ -444,7 +447,7 @@ h1 em {
   color: #51469b;
   border-radius: 22px;
   padding: 8px 14px;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 13px;
 }
 
