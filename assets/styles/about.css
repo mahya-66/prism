@@ -111,11 +111,11 @@
   border-radius: 50%;
   background: conic-gradient(
     from 250deg at 10% 50%,
-    #ff6c8c77,
-    #ffcf6c77,
-    #70e6c977,
-    #67baff77,
-    #a78aff77,
+    var(--rainbow-pink),
+    var(--rainbow-orange),
+    var(--rainbow-green),
+    var(--rainbow-blue),
+    var(--rainbow-purple),
     transparent 65%
   );
   filter: blur(22px);
@@ -124,7 +124,7 @@
 
 .about-formula {
   position: absolute;
-  color: #7775b6;
+  color: var(--formula--color);
   font: 13px Georgia;
   z-index: 3;
 }
@@ -266,7 +266,7 @@
   font-size: 27px;
 }
 .purple-icon {
-  color: #7968dc;
+  color: var(--purple-600);
   background: #8c79ef19;
 }
 .blue-icon {
@@ -274,7 +274,7 @@
   background: #5cc6e51b;
 }
 .green-icon {
-  color: #55b69a;
+  color: var(--cyan);
   background: #55b69a1c;
 }
 .belief-card h3 {
@@ -345,7 +345,7 @@
   line-height: 1.9;
 }
 .field-purple > span {
-  color: #7968dc;
+  color: var(--purple-600);
   background: #8c79ef19;
 }
 .field-blue > span {
@@ -353,7 +353,7 @@
   background: #5cc6e51b;
 }
 .field-green > span {
-  color: #55b69a;
+  color: var(--cyan);
   background: #55b69a1c;
 }
 .field-pink > span {
